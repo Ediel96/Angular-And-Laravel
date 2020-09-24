@@ -1,11 +1,11 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        navy: '#2f3458',
+      },
+    },
   },
   variants: {},
   plugins: [],
