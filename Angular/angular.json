@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "finance-app": {
@@ -16,10 +16,10 @@
       "architect": {
         "build": {
           "builder": "@angular-builders/custom-webpack:browser",
-          "options": {  
+          "options": {
             "customWebpackConfig": {
               "path": "./webpack.config.js"
-            },  
+            },
             "outputPath": "dist/finance-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -71,7 +71,7 @@
           "options": {
             "customWebpackConfig": {
               "path": "./webpack.config.js"
-            },  
+            },
             "browserTarget": "finance-app:build",
             "proxyConfig": "src/proxy.conf.json"
           },
@@ -130,6 +130,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "finance-app"
+    }
+  },
+  "defaultProject": "finance-app",
+  "cli": {
+    "analytics": "dd33796c-ab56-46f3-924f-59cbdf77ee94"
+  }
 }
