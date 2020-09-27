@@ -12,6 +12,8 @@ import { HomeComponent } from './modules/pages/home/home.component';
 import { IndexComponent } from './modules/pages/index/index.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterLeftComponent } from './modules/components/footer-left/footer-left.component';
+import { ContentHomeComponent } from './modules/components/content-home/content-home.component';
 
 
 @NgModule({
@@ -23,6 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FooterComponent,
     HomeComponent,
     IndexComponent,
+    FooterLeftComponent,
+    ContentHomeComponent,
   ],
   imports: [
     BrowserModule,

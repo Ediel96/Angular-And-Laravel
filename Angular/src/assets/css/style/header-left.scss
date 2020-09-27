@@ -1,0 +1,139 @@
+*,
+*:after,
+*:before {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   letter-spacing: 2px;
+}
+
+#navbar {
+   background-color: #596275;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 300px;
+
+   header {
+      height: 64px;
+      line-height: 64px;
+      color: #f19066;
+      background-color: #303952;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 24px;
+   }
+
+   .links {
+      list-style: none;
+      text-align: center;
+      padding: 30px 0;
+      height: 100%;
+      overflow: auto;
+
+      .link {
+         a:link,
+         a:visited {
+            text-decoration: none;
+            display: block;
+            padding: 20px 20px;
+            color: #f5cd79;
+            transition: all 0.2s ease-out;
+         }
+
+         a:hover {
+            color: #f19066;
+            background-color: #303952;
+            border-left: 5px solid #f19066;
+         }
+      }
+   }
+}
+
+#main-doc {
+   margin-left: 300px;
+   padding: 30px;
+   background-color: #fefefe;
+   max-width: 800px;
+
+   .main-section {
+      padding: 30px 0;
+      border-bottom: 1px solid #f19066;
+
+      header {
+         font-size: 28px;
+         // text-transform: uppercase;
+         color: #e66767;
+         margin-bottom: 20px;
+
+         + p {
+            margin-bottom: 20px;
+            color: #303952;
+            font-size: 16px;
+         }
+      }
+
+      code {
+         background-color: #f7d794;
+         display: block;
+         margin: 15px 40px;
+         padding: 15px;
+         border-radius: 3px;
+         overflow: auto;
+      }
+
+      p {
+         font-size: 14px;
+      }
+
+      ul {
+         margin: 30px;
+         padding: 15px;
+         // list-style: none;
+         background-color: #63cdda;
+         border-radius: 3px;
+
+         li {
+            color: #fefefe;
+            line-height: 2;
+            margin-left: 10px;
+         }
+      }
+   }
+}
+
+@media screen and (max-width: 800px) {
+   #navbar {
+      width: 100%;
+      bottom: auto;
+
+      .links {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: flex-start;
+         height: auto;
+
+         .link {
+            a:link,
+            a:visited {
+               padding: 10px;
+            }
+
+            a:hover {
+               border: none;
+            }
+         }
+      }
+   }
+
+   #main-doc {
+      margin-left: 10px;
+      padding: 15px;
+   }
+}

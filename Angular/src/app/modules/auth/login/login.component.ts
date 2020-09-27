@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
         let token = success.access_token;
         this.auth.settokendataCliente(res)
         this.auth.setTokenClient(token)
-        //this.router.navigate(['/home-default']);
+        this.router.navigate(['/home']);
 
     },
       err => console.log(err)
