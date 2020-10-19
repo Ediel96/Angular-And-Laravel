@@ -6,14 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './modules/auth/login/login.component';
 import { RegisterComponent } from './modules/auth/register/register.component';
-import { HeaderComponent } from './modules/components/header/header.component';
-import { FooterComponent } from './modules/components/footer/footer.component';
-import { HomeComponent } from './modules/pages/home/home.component';
+
+// import {HomeModule} from './modules/pages/home/home.module';
 import { IndexComponent } from './modules/pages/index/index.component';
 
+//Paques de angular
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FooterLeftComponent } from './modules/components/footer-left/footer-left.component';
-import { ContentHomeComponent } from './modules/components/content-home/content-home.component';
+
 
 
 @NgModule({
@@ -21,12 +20,9 @@ import { ContentHomeComponent } from './modules/components/content-home/content-
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderComponent,
-    FooterComponent,
-    HomeComponent,
-    IndexComponent,
-    FooterLeftComponent,
-    ContentHomeComponent,
+    IndexComponent
+    //HomeModule
+
   ],
   imports: [
     BrowserModule,
