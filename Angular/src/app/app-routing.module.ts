@@ -14,7 +14,7 @@ const routes: Routes = [
 
   { path: 'admin/login', component: LoginComponent},
 
-  //{ path: 'home', loadChildren:'./modules/pages/home.module#HomeModule'},
+  //{ path: 'home', loadChildren:'./modules/pages/home.module#HomeModule'},sdfsdfsdf
 
   {
     path: 'home', loadChildren: () =>

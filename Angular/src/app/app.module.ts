@@ -21,8 +21,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     RegisterComponent,
     IndexComponent
-    //HomeModule
-
   ],
   imports: [
     BrowserModule,
